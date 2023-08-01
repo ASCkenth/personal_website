@@ -1,0 +1,92 @@
+body{
+	background-color: black;
+}
+#topPagenav{
+	display:flex;
+	font-family: sans-serif;
+	gap:80%;
+	font-size: 15px;
+	background-color: black;
+	color: white;
+}
+#topPagenav a{
+	color:white;
+	text-decoration: none;
+	align-self: center;
+}
+#topPagenav a:hover{
+	color:grey;
+}
+#topPagenav #homepageBTN{
+	align-self:start;
+	padding-left: 15px;
+	padding:5px;
+}
+#topPagenav #topNavLinks{
+	width:300px;
+	padding:5px;
+}
+
+/*below nav*/
+#Page{
+	display: flex;
+	gap:10px;
+}
+#ME{
+	border:2px solid black;
+	width:70%;
+	background-color: #222;
+	color:white;
+	position: relative;
+}
+#ME #actuallyME{
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform: translate(-50%,-50%);
+/*	background-color: white;*/
+	padding-left: 50px;
+	color:white;
+	font-weight: bolder;
+	font-size: 30px;
+	font-family: monospace;
+	padding-right: 50px;
+	text-align: center;
+	border-radius: 10px;
+}
+#ME img{
+	display:block;
+	margin-left: auto;
+	margin-right: auto;
+	width:97.5%;
+	opacity:0.875;
+}
+#side-stuff{
+	font-family: monospace;
+	border:2px solid black;
+	width:30%;
+	color:white;
+/*	background-color: #222;*/
+}
+#side-stuff h1{
+	text-align: center;
+	font-size: 30px;
+}
+#side-stuff p{
+	background-color: #222;
+	padding:20px;
+	padding-bottom: 150px;
+}
+
+
+/*making site responsive*/
+@media(max-width:1030px){
+	#topPagenav{gap:70%;}
+	#Page{flex-direction: column;}
+	#ME{width:100%}
+	#side-stuff{width:100%}
+}
+@media(max-with:680px){
+	#topPagenav{gap:40%;}
+	#ME #actuallyME{font-size: 10px;}
+}
